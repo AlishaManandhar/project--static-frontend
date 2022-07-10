@@ -14,7 +14,6 @@
     font-size: 2rem;
     letter-spacing: 1.5px;
     text-transform: uppercase;
-
 }
 /*************** root ends here *************/
 
@@ -53,9 +52,58 @@
   font-weight: bold;
   text-decoration: none;
 }
-
-
-
 /*************** login starts here *************/
 
+header img {
+    width: 50px;
+    min-width: 50px;
+    object-fit: cover;
+}
 
+
+.icon-links{
+    background-color: #f7f9fc;
+    padding: 8px;
+    border-radius: 100%;
+    color: rgba(0,0,0,.85);
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.company-name{
+    color: #0052CC;
+}
+
+.navbar-brand{
+    color: #0052CC;
+    font-weight: bold;
+}
+
+.nav-link{
+    color:black !important;
+    font-weight: 600;
+}
+.nav-link:hover, .nav-link:active{
+    color: #0052CC !important;
+}
+
+
+/* .nav-link:hover::after{
+    content:'';
+    height:2px;
+    background-color: #0052CC;
+    border: 2px solid #0052CC;
+    display: block;
+    margin-top: 3px;
+} */
+
+.navbar-second{
+    box-shadow: 0px 3px 5px 0px rgba(192, 192, 192, 0.74);
+}
+
+input:focus{
+    outline: none !important;
+    box-shadow: none !important;
+}
