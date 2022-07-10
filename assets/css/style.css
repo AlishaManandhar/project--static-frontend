@@ -1,10 +1,58 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.clear {
+  clear: both;
+}
 
-.clear{
-    clear: both;
+.developer-detail{
+    font-weight: bold;
+    color: #0052CC;
+    font-size: 30px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+
+}
+/*************** root ends here *************/
+
+/*************** login starts here *************/
+.section-login{
+    position: relative;
+}
+
+.left-image{
+    position: absolute;
+    bottom: 0px;
+    left:0;
+}
+
+.right-image{
+    position: absolute;
+    bottom: 0px;
+    right:0;
+}
+
+.login .card {
+  border: 1px solid rgb(214, 214, 214);
+  box-shadow: rgb(0 0 0 / 10%) 0px 0px 10px;
+  border-radius: 3px;
+}
+
+.login img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}
+
+.login-links {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.login-btn {
+  width: 100%;
+  font-size: large;
 }
