@@ -8,30 +8,35 @@
   clear: both;
 }
 
-.developer-detail{
-    font-weight: bold;
-    color: #0052CC;
-    font-size: 2rem;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
+body{
+    height: 100vh;
+    overflow-y: hidden;
+    background-color: white;
+}
+.developer-detail {
+  font-weight: bold;
+  color: #0052cc;
+  font-size: 2rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
 }
 /*************** root ends here *************/
 
 /*************** login starts here *************/
-.section-login{
-    position: relative;
+.section-login {
+  position: relative;
 }
 
-.left-image{
-    position: absolute;
-    bottom: 0px;
-    left:0;
+.left-image {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
 }
 
-.right-image{
-    position: absolute;
-    bottom: 0px;
-    right:0;
+.right-image {
+  position: absolute;
+  bottom: 0px;
+  right: 0;
 }
 
 .login .card {
@@ -55,45 +60,44 @@
 /*************** login ends here *************/
 
 /*************** header starts here *************/
-header{
-    background-color: white;
+header {
+  background-color: white;
 }
 
 header img {
-    width: 50px;
-    min-width: 50px;
-    object-fit: cover;
+  width: 50px;
+  min-width: 50px;
+  object-fit: cover;
 }
 
-
-.icon-links{
-    background-color: #f7f9fc;
-    padding: 8px;
-    border-radius: 100%;
-    color: rgba(0,0,0,.85);
-    width: 40px;
-    height: 40px;
-    text-align: center;
-    cursor: pointer;
+.icon-links {
+  background-color: #f7f9fc;
+  padding: 8px;
+  border-radius: 100%;
+  color: rgba(0, 0, 0, 0.85);
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  cursor: pointer;
 }
 
-.company-name{
-    color: #0052CC;
+.company-name {
+  color: #0052cc;
 }
 
-.navbar-brand{
-    color: #0052CC;
-    font-weight: bold;
+.navbar-brand {
+  color: #0052cc;
+  font-weight: bold;
 }
 
-.nav-link{
-    color:black !important;
-    font-weight: 600;
+.nav-link {
+  color: black !important;
+  font-weight: 600;
 }
-.nav-link:hover, .nav-link:active{
-    color: #0052CC !important;
+.nav-link:hover,
+.nav-link:active {
+  color: #0052cc !important;
 }
-
 
 /* .nav-link:hover::after{
     content:'';
@@ -104,51 +108,105 @@ header img {
     margin-top: 3px;
 } */
 
-.navbar-second{
-    box-shadow: 0px 3px 5px 0px rgba(192, 192, 192, 0.74);
+.navbar-second {
+  box-shadow: 0px 3px 5px 0px rgba(192, 192, 192, 0.74);
 }
 
-input:focus{
-    outline: none !important;
-    box-shadow: none !important;
+input:focus {
+  outline: none !important;
+  box-shadow: none !important;
 }
 /*************** header ends here *************/
 
 /*************** home-page starts here *************/
-.widget-card{
-    background-color: #f5f5fd;
-    border-radius: 25px;
-    border: none;
+.widget-card {
+  background-color: #f5f5fd;
+  border-radius: 25px;
+  border: none;
 }
 
 .report-card .card {
-    border-radius: 10px;
-    box-shadow: 0 4px 3px 0 rgba(0, 0, 0, 0.2);
-    padding: 5px;
+  border-radius: 10px;
+  box-shadow: 0 4px 3px 0 rgba(0, 0, 0, 0.2);
+  padding: 5px;
 }
-
 
 .report-card .report:first-child {
-    border-right: 1px solid #e0e0e0;
+  border-right: 1px solid #e0e0e0;
 }
 
-.report-controls .title, .flow-list .title{
-    font-size: 1.2rem;
-    font-weight: bold;
+.report-controls .title,
+.flow-list .title {
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
 .flow-card {
-    width: 250px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 50px;
-  }
-  
-  .flow-card i {
-    font-size: 30px;
-    padding: 5px 8px;
-    margin-bottom: 10px;
-    display: inline-block;
-    border-radius: 5px;
-  }
+  width: 250px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 50px;
+}
+
+.flow-card i {
+  font-size: 30px;
+  padding: 5px 8px;
+  margin-bottom: 10px;
+  display: inline-block;
+  border-radius: 5px;
+}
 /*************** home-page ends here *************/
 
+/*************** kanban-page starts here *************/
+.breadcrumb-item a {
+  text-decoration: none;
+  color: black;
+}
+
+.board-settings i {
+  color: black;
+  font-weight: 800;
+}
+
+.btn-settings,
+.btn-settings:hover {
+  background-color: #42526e;
+}
+.btn-settings i {
+  color: white;
+}
+
+.btn-grey,
+.btn-grey:hover {
+  background-color: #f4f5f7;
+}
+
+.section-kanban-board{
+    width: 100%;
+    background-color: white;
+}
+
+.status-title{
+    background-color: #f4f5f7;
+}
+
+.task-group {
+  background-color: #f4f5f7;
+  width: 16%;
+  height:500px;
+  overflow-y: auto;
+}
+
+.task-link{
+    text-decoration: none;
+    color: #42526e;
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: black;
+}
+
+/*************** kanban-page ends here *************/

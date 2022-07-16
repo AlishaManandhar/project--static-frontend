@@ -101,6 +101,530 @@
       <!------------ navbar-second ends here ------------------->
     </header>
     <!------------ header ends here ------------------->
+    <section class="section-kanban container mt-3">
+      <div class="breadcrumbs">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Projects</a></li>
+            <li class="breadcrumb-item"><a href="#">Client Implementation</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Aidemoney</li>
+          </ol>
+        </nav>
+        <div class="board-settings d-flex justify-content-between">
+          <div class="page-title flex-shrink-1">
+            <h4>Kanban Board</h4>
+          </div>
+          <div class="settings">
+            <ul class="nav justify-content-end">
+              <li class="nav-item me-md-4 me-3">
+                <h4><i class="bi bi-star"></i></h4>
+              </li>
+              <li class="nav-item me-md-4 me-3">
+                <h4><i class="bi bi-share"></i></h4>
+              </li>
+              <li class="nav-item me-sm-3">
+                <button class="btn btn-settings"><i class="bi bi-three-dots"></i></button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!------------ board-settings ends here ------------------->
+        <div class="operations d-flex flex-wrap">
+          <div class="form-outline">
+            <input type="search" placeholder="Search here..." class="form-control" />
+          </div>
+          <div class="buttons ms-md-3 mt-2 mt-md-0">
+            <button class="btn btn-grey mb-2 mb-md-0">Only My Issues</button>
+            <div class="dropdown d-inline">
+              <button class="btn btn-grey dropdown-toggle" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Search By Assignee
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Raichung Pun Magar </a></li>
+                <li><a class="dropdown-item" href="#">SatyaDeep Neupane</a></li>
+                <li><a class="dropdown-item" href="#">Prajita Balami</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!------------ operations ends here ------------------->
+      </div>
+      <!------------ breadcrumbs ends here ------------------->
+
+      <section class="section-kanban-board row mt-3 mx-md-1">
+        <div class="col-2 task-group p-1 me-2">
+          <div class="status-title sticky-top  p-2">BACKLOG 23</div>
+          <div class="card task-card mb-2">
+            <div class="card-body">
+              <h6>Transaction is out of bound and needs repair</h6>
+              <div class="task-details mb-1">
+                <i class="bi bi-stop-circle-fill text-primary pe-2"></i>
+                <i class="bi bi-arrow-up-circle-fill text-success pe-2"></i>
+                <i class="bi bi-three-dots text-danger"></i>
+              </div>
+              <span class="badge rounded-pill text-bg-dark me-2">AM</span>
+              <a href="#" class="task-link">CI-2568</a>
+            </div>
+          </div>
+          <div class="card task-card mb-2">
+            <div class="card-body">
+              <h6>Transaction is out of bound and needs repair</h6>
+              <div class="task-details mb-1">
+                <i class="bi bi-check-square-fill text-danger pe-2"></i>
+                <i class="bi bi-arrow-up-circle-fill text-success pe-2"></i>
+                <i class="bi bi-three-dots text-danger"></i>
+              </div>
+              <span class="badge rounded-pill text-bg-dark me-2">AM</span>
+              <a href="#" class="task-link">CI-2568</a>
+            </div>
+          </div>
+          <div class="card task-card mb-2">
+            <div class="card-body">
+              <h6>Transaction is out of bound and needs repair</h6>
+              <div class="task-details mb-1">
+                <i class="bi bi-stop-circle-fill text-primary pe-2"></i>
+                <i class="bi bi-arrow-up-circle-fill text-success pe-2"></i>
+                <i class="bi bi-three-dots text-danger"></i>
+              </div>
+              <span class="badge rounded-pill text-bg-dark me-2">AM</span>
+              <a href="#" class="task-link">CI-2568</a>
+            </div>
+          </div>
+          <div class="card task-card mb-2">
+            <div class="card-body">
+              <h6>Transaction is out of bound and needs repair</h6>
+              <div class="task-details mb-1">
+                <i class="bi bi-stop-circle-fill text-primary pe-2"></i>
+                <i class="bi bi-arrow-up-circle-fill text-success pe-2"></i>
+                <i class="bi bi-three-dots text-danger"></i>
+              </div>
+              <span class="badge rounded-pill text-bg-dark me-2">AM</span>
+              <a href="#" class="task-link">CI-2568</a>
+            </div>
+          </div>
+          <div class="card task-card mb-2">
+            <div class="card-body">
+              <h6>Transaction is out of bound and needs repair</h6>
+              <div class="task-details mb-1">
+                <i class="bi bi-stop-circle-fill text-primary pe-2"></i>
+                <i class="bi bi-arrow-up-circle-fill text-success pe-2"></i>
+                <i class="bi bi-three-dots text-danger"></i>
+              </div>
+              <span class="badge rounded-pill text-bg-dark me-2">AM</span>
+              <a href="#" class="task-link">CI-2568</a>
+            </div>
+          </div>
+          <div class="card task-card mb-2">
+            <div class="card-body">
+              <h6>Transaction is out of bound and needs repair</h6>
+              <div class="task-details mb-1">
+                <i class="bi bi-stop-circle-fill text-primary pe-2"></i>
+                <i class="bi bi-arrow-up-circle-fill text-success pe-2"></i>
+                <i class="bi bi-three-dots text-danger"></i>
+              </div>
+              <span class="badge rounded-pill text-bg-dark me-2">AM</span>
+              <a href="#" class="task-link">CI-2568</a>
+            </div>
+          </div>
+
+
+        </div>
+
+        <div class="col-2 task-group p-1 me-2">
+          <div class="status-title p-2">TO DO 8</div>
+          <div class="card task-card mb-2">
+            <div class="card-body">
+              <h6>Transaction is out of bound and needs repair</h6>
+              <div class="task-details mb-1">
+                <i class="bi bi-stop-circle-fill text-primary pe-2"></i>
+                <i class="bi bi-arrow-up-circle-fill text-success pe-2"></i>
+                <i class="bi bi-three-dots text-danger"></i>
+              </div>
+              <span class="badge rounded-pill text-bg-dark me-2">AM</span>
+              <a href="#" class="task-link">CI-2568</a>
+            </div>
+          </div>
+          <div class="card task-card mb-2">
+            <div class="card-body">
+              <h6>Transaction is out of bound and needs repair</h6>
+              <div class="task-details mb-1">
+                <i class="bi bi-stop-circle-fill text-primary pe-2"></i>
+                <i class="bi bi-arrow-up-circle-fill text-success pe-2"></i>
+                <i class="bi bi-three-dots text-danger"></i>
+              </div>
+              <span class="badge rounded-pill text-bg-dark me-2">AM</span>
+              <a href="#" class="task-link">CI-2568</a>
+            </div>
+          </div>
+          <div class="card task-card mb-2">
+            <div class="card-body">
+              <h6>Transaction is out of bound and needs repair</h6>
+              <div class="task-details mb-1">
+                <i class="bi bi-stop-circle-fill text-primary pe-2"></i>
+                <i class="bi bi-arrow-up-circle-fill text-success pe-2"></i>
+                <i class="bi bi-three-dots text-danger"></i>
+              </div>
+              <span class="badge rounded-pill text-bg-dark me-2">AM</span>
+              <a href="#" class="task-link">CI-2568</a>
+            </div>
+          </div>
+          <div class="card task-card mb-2">
+            <div class="card-body">
+              <h6>Transaction is out of bound and needs repair</h6>
+              <div class="task-details mb-1">
+                <i class="bi bi-stop-circle-fill text-primary pe-2"></i>
+                <i class="bi bi-arrow-up-circle-fill text-success pe-2"></i>
+                <i class="bi bi-three-dots text-danger"></i>
+              </div>
+              <span class="badge rounded-pill text-bg-dark me-2">AM</span>
+              <a href="#" class="task-link">CI-2568</a>
+            </div>
+          </div>
+          <div class="card task-card mb-2">
+            <div class="card-body">
+              <h6>Transaction is out of bound and needs repair</h6>
+              <div class="task-details mb-1">
+                <i class="bi bi-stop-circle-fill text-primary pe-2"></i>
+                <i class="bi bi-arrow-up-circle-fill text-success pe-2"></i>
+                <i class="bi bi-three-dots text-danger"></i>
+              </div>
+              <span class="badge rounded-pill text-bg-dark me-2">AM</span>
+              <a href="#" class="task-link">CI-2568</a>
+            </div>
+          </div>
+          <div class="card task-card mb-2">
+            <div class="card-body">
+              <h6>Transaction is out of bound and needs repair</h6>
+              <div class="task-details mb-1">
+                <i class="bi bi-stop-circle-fill text-primary pe-2"></i>
+                <i class="bi bi-arrow-up-circle-fill text-success pe-2"></i>
+                <i class="bi bi-three-dots text-danger"></i>
+              </div>
+              <span class="badge rounded-pill text-bg-dark me-2">AM</span>
+              <a href="#" class="task-link">CI-2568</a>
+            </div>
+          </div>
+
+
+        </div>
+
+        <div class="col-2 task-group p-1 me-2">
+          <div class="status-title p-2">IN PROGRESS 23</div>
+          <div class="card task-card mb-2">
+            <div class="card-body">
+              <h6>Transaction is out of bound and needs repair</h6>
+              <div class="task-details mb-1">
+                <i class="bi bi-stop-circle-fill text-primary pe-2"></i>
+                <i class="bi bi-arrow-up-circle-fill text-success pe-2"></i>
+                <i class="bi bi-three-dots text-danger"></i>
+              </div>
+              <span class="badge rounded-pill text-bg-dark me-2">AM</span>
+              <a href="#" class="task-link">CI-2568</a>
+            </div>
+          </div>
+          <div class="card task-card mb-2">
+            <div class="card-body">
+              <h6>Transaction is out of bound and needs repair</h6>
+              <div class="task-details mb-1">
+                <i class="bi bi-stop-circle-fill text-primary pe-2"></i>
+                <i class="bi bi-arrow-up-circle-fill text-success pe-2"></i>
+                <i class="bi bi-three-dots text-danger"></i>
+              </div>
+              <span class="badge rounded-pill text-bg-dark me-2">AM</span>
+              <a href="#" class="task-link">CI-2568</a>
+            </div>
+          </div>
+          <div class="card task-card mb-2">
+            <div class="card-body">
+              <h6>Transaction is out of bound and needs repair</h6>
+              <div class="task-details mb-1">
+                <i class="bi bi-stop-circle-fill text-primary pe-2"></i>
+                <i class="bi bi-arrow-up-circle-fill text-success pe-2"></i>
+                <i class="bi bi-three-dots text-danger"></i>
+              </div>
+              <span class="badge rounded-pill text-bg-dark me-2">AM</span>
+              <a href="#" class="task-link">CI-2568</a>
+            </div>
+          </div>
+          <div class="card task-card mb-2">
+            <div class="card-body">
+              <h6>Transaction is out of bound and needs repair</h6>
+              <div class="task-details mb-1">
+                <i class="bi bi-stop-circle-fill text-primary pe-2"></i>
+                <i class="bi bi-arrow-up-circle-fill text-success pe-2"></i>
+                <i class="bi bi-three-dots text-danger"></i>
+              </div>
+              <span class="badge rounded-pill text-bg-dark me-2">AM</span>
+              <a href="#" class="task-link">CI-2568</a>
+            </div>
+          </div>
+          <div class="card task-card mb-2">
+            <div class="card-body">
+              <h6>Transaction is out of bound and needs repair</h6>
+              <div class="task-details mb-1">
+                <i class="bi bi-stop-circle-fill text-primary pe-2"></i>
+                <i class="bi bi-arrow-up-circle-fill text-success pe-2"></i>
+                <i class="bi bi-three-dots text-danger"></i>
+              </div>
+              <span class="badge rounded-pill text-bg-dark me-2">AM</span>
+              <a href="#" class="task-link">CI-2568</a>
+            </div>
+          </div>
+          <div class="card task-card mb-2">
+            <div class="card-body">
+              <h6>Transaction is out of bound and needs repair</h6>
+              <div class="task-details mb-1">
+                <i class="bi bi-stop-circle-fill text-primary pe-2"></i>
+                <i class="bi bi-arrow-up-circle-fill text-success pe-2"></i>
+                <i class="bi bi-three-dots text-danger"></i>
+              </div>
+              <span class="badge rounded-pill text-bg-dark me-2">AM</span>
+              <a href="#" class="task-link">CI-2568</a>
+            </div>
+          </div>
+
+
+        </div>
+
+        <div class="col-2 task-group p-1 me-2">
+          <div class="status-title p-2">IN DEV QA 10</div>
+          <div class="card task-card mb-2">
+            <div class="card-body">
+              <h6>Transaction is out of bound and needs repair</h6>
+              <div class="task-details mb-1">
+                <i class="bi bi-stop-circle-fill text-primary pe-2"></i>
+                <i class="bi bi-arrow-up-circle-fill text-success pe-2"></i>
+                <i class="bi bi-three-dots text-danger"></i>
+              </div>
+              <span class="badge rounded-pill text-bg-dark me-2">AM</span>
+              <a href="#" class="task-link">CI-2568</a>
+            </div>
+          </div>
+          <div class="card task-card mb-2">
+            <div class="card-body">
+              <h6>Transaction is out of bound and needs repair</h6>
+              <div class="task-details mb-1">
+                <i class="bi bi-stop-circle-fill text-primary pe-2"></i>
+                <i class="bi bi-arrow-up-circle-fill text-success pe-2"></i>
+                <i class="bi bi-three-dots text-danger"></i>
+              </div>
+              <span class="badge rounded-pill text-bg-dark me-2">AM</span>
+              <a href="#" class="task-link">CI-2568</a>
+            </div>
+          </div>
+          <div class="card task-card mb-2">
+            <div class="card-body">
+              <h6>Transaction is out of bound and needs repair</h6>
+              <div class="task-details mb-1">
+                <i class="bi bi-stop-circle-fill text-primary pe-2"></i>
+                <i class="bi bi-arrow-up-circle-fill text-success pe-2"></i>
+                <i class="bi bi-three-dots text-danger"></i>
+              </div>
+              <span class="badge rounded-pill text-bg-dark me-2">AM</span>
+              <a href="#" class="task-link">CI-2568</a>
+            </div>
+          </div>
+          <div class="card task-card mb-2">
+            <div class="card-body">
+              <h6>Transaction is out of bound and needs repair</h6>
+              <div class="task-details mb-1">
+                <i class="bi bi-stop-circle-fill text-primary pe-2"></i>
+                <i class="bi bi-arrow-up-circle-fill text-success pe-2"></i>
+                <i class="bi bi-three-dots text-danger"></i>
+              </div>
+              <span class="badge rounded-pill text-bg-dark me-2">AM</span>
+              <a href="#" class="task-link">CI-2568</a>
+            </div>
+          </div>
+          <div class="card task-card mb-2">
+            <div class="card-body">
+              <h6>Transaction is out of bound and needs repair</h6>
+              <div class="task-details mb-1">
+                <i class="bi bi-stop-circle-fill text-primary pe-2"></i>
+                <i class="bi bi-arrow-up-circle-fill text-success pe-2"></i>
+                <i class="bi bi-three-dots text-danger"></i>
+              </div>
+              <span class="badge rounded-pill text-bg-dark me-2">AM</span>
+              <a href="#" class="task-link">CI-2568</a>
+            </div>
+          </div>
+          <div class="card task-card mb-2">
+            <div class="card-body">
+              <h6>Transaction is out of bound and needs repair</h6>
+              <div class="task-details mb-1">
+                <i class="bi bi-stop-circle-fill text-primary pe-2"></i>
+                <i class="bi bi-arrow-up-circle-fill text-success pe-2"></i>
+                <i class="bi bi-three-dots text-danger"></i>
+              </div>
+              <span class="badge rounded-pill text-bg-dark me-2">AM</span>
+              <a href="#" class="task-link">CI-2568</a>
+            </div>
+          </div>
+
+
+        </div>
+
+        <div class="col-2 task-group p-1 me-2">
+          <div class="status-title p-2">READY FOR TESTING 23</div>
+          <div class="card task-card mb-2">
+            <div class="card-body">
+              <h6>Transaction is out of bound and needs repair</h6>
+              <div class="task-details mb-1">
+                <i class="bi bi-stop-circle-fill text-primary pe-2"></i>
+                <i class="bi bi-arrow-up-circle-fill text-success pe-2"></i>
+                <i class="bi bi-three-dots text-danger"></i>
+              </div>
+              <span class="badge rounded-pill text-bg-dark me-2">AM</span>
+              <a href="#" class="task-link">CI-2568</a>
+            </div>
+          </div>
+          <div class="card task-card mb-2">
+            <div class="card-body">
+              <h6>Transaction is out of bound and needs repair</h6>
+              <div class="task-details mb-1">
+                <i class="bi bi-stop-circle-fill text-primary pe-2"></i>
+                <i class="bi bi-arrow-up-circle-fill text-success pe-2"></i>
+                <i class="bi bi-three-dots text-danger"></i>
+              </div>
+              <span class="badge rounded-pill text-bg-dark me-2">AM</span>
+              <a href="#" class="task-link">CI-2568</a>
+            </div>
+          </div>
+          <div class="card task-card mb-2">
+            <div class="card-body">
+              <h6>Transaction is out of bound and needs repair</h6>
+              <div class="task-details mb-1">
+                <i class="bi bi-stop-circle-fill text-primary pe-2"></i>
+                <i class="bi bi-arrow-up-circle-fill text-success pe-2"></i>
+                <i class="bi bi-three-dots text-danger"></i>
+              </div>
+              <span class="badge rounded-pill text-bg-dark me-2">AM</span>
+              <a href="#" class="task-link">CI-2568</a>
+            </div>
+          </div>
+          <div class="card task-card mb-2">
+            <div class="card-body">
+              <h6>Transaction is out of bound and needs repair</h6>
+              <div class="task-details mb-1">
+                <i class="bi bi-stop-circle-fill text-primary pe-2"></i>
+                <i class="bi bi-arrow-up-circle-fill text-success pe-2"></i>
+                <i class="bi bi-three-dots text-danger"></i>
+              </div>
+              <span class="badge rounded-pill text-bg-dark me-2">AM</span>
+              <a href="#" class="task-link">CI-2568</a>
+            </div>
+          </div>
+          <div class="card task-card mb-2">
+            <div class="card-body">
+              <h6>Transaction is out of bound and needs repair</h6>
+              <div class="task-details mb-1">
+                <i class="bi bi-stop-circle-fill text-primary pe-2"></i>
+                <i class="bi bi-arrow-up-circle-fill text-success pe-2"></i>
+                <i class="bi bi-three-dots text-danger"></i>
+              </div>
+              <span class="badge rounded-pill text-bg-dark me-2">AM</span>
+              <a href="#" class="task-link">CI-2568</a>
+            </div>
+          </div>
+          <div class="card task-card mb-2">
+            <div class="card-body">
+              <h6>Transaction is out of bound and needs repair</h6>
+              <div class="task-details mb-1">
+                <i class="bi bi-stop-circle-fill text-primary pe-2"></i>
+                <i class="bi bi-arrow-up-circle-fill text-success pe-2"></i>
+                <i class="bi bi-three-dots text-danger"></i>
+              </div>
+              <span class="badge rounded-pill text-bg-dark me-2">AM</span>
+              <a href="#" class="task-link">CI-2568</a>
+            </div>
+          </div>
+
+
+        </div>
+
+        <div class="col-2 task-group p-1">
+          <div class="status-title p-2">DONE 5</div>
+          <div class="card task-card mb-2">
+            <div class="card-body">
+              <h6>Transaction is out of bound and needs repair</h6>
+              <div class="task-details mb-1">
+                <i class="bi bi-stop-circle-fill text-primary pe-2"></i>
+                <i class="bi bi-arrow-up-circle-fill text-success pe-2"></i>
+                <i class="bi bi-three-dots text-danger"></i>
+              </div>
+              <span class="badge rounded-pill text-bg-dark me-2">AM</span>
+              <a href="#" class="task-link">CI-2568</a>
+            </div>
+          </div>
+          <div class="card task-card mb-2">
+            <div class="card-body">
+              <h6>Transaction is out of bound and needs repair</h6>
+              <div class="task-details mb-1">
+                <i class="bi bi-stop-circle-fill text-primary pe-2"></i>
+                <i class="bi bi-arrow-up-circle-fill text-success pe-2"></i>
+                <i class="bi bi-three-dots text-danger"></i>
+              </div>
+              <span class="badge rounded-pill text-bg-dark me-2">AM</span>
+              <a href="#" class="task-link"> <strike>CI-125</strike></a>
+            </div>
+          </div>
+          <div class="card task-card mb-2">
+            <div class="card-body">
+              <h6>Transaction is out of bound and needs repair</h6>
+              <div class="task-details mb-1">
+                <i class="bi bi-stop-circle-fill text-primary pe-2"></i>
+                <i class="bi bi-arrow-up-circle-fill text-success pe-2"></i>
+                <i class="bi bi-three-dots text-danger"></i>
+              </div>
+              <span class="badge rounded-pill text-bg-dark me-2">AM</span>
+              <a href="#" class="task-link">CI-2568</a>
+            </div>
+          </div>
+          <div class="card task-card mb-2">
+            <div class="card-body">
+              <h6>Transaction is out of bound and needs repair</h6>
+              <div class="task-details mb-1">
+                <i class="bi bi-stop-circle-fill text-primary pe-2"></i>
+                <i class="bi bi-arrow-up-circle-fill text-success pe-2"></i>
+                <i class="bi bi-three-dots text-danger"></i>
+              </div>
+              <span class="badge rounded-pill text-bg-dark me-2">AM</span>
+              <a href="#" class="task-link">CI-2568</a>
+            </div>
+          </div>
+          <div class="card task-card mb-2">
+            <div class="card-body">
+              <h6>Transaction is out of bound and needs repair</h6>
+              <div class="task-details mb-1">
+                <i class="bi bi-stop-circle-fill text-primary pe-2"></i>
+                <i class="bi bi-arrow-up-circle-fill text-success pe-2"></i>
+                <i class="bi bi-three-dots text-danger"></i>
+              </div>
+              <span class="badge rounded-pill text-bg-dark me-2">AM</span>
+              <a href="#" class="task-link">CI-2568</a>
+            </div>
+          </div>
+          <div class="card task-card mb-2">
+            <div class="card-body">
+              <h6>Transaction is out of bound and needs repair</h6>
+              <div class="task-details mb-1">
+                <i class="bi bi-stop-circle-fill text-primary pe-2"></i>
+                <i class="bi bi-arrow-up-circle-fill text-success pe-2"></i>
+                <i class="bi bi-three-dots text-danger"></i>
+              </div>
+              <span class="badge rounded-pill text-bg-dark me-2">AM</span>
+              <a href="#" class="task-link">CI-2568</a>
+            </div>
+          </div>
+
+
+        </div>
+      
+
+      </section>
+    </section>
+    <!------------ section-kanban ends here ------------------->
 
   </div>
   </div>
