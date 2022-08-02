@@ -10,7 +10,7 @@
 
 body{
     height: 100vh;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */ 
     background-color: white;
 }
 .developer-detail {
@@ -209,4 +209,27 @@ input:focus {
     background-color: black;
 }
 
-/*************** kanban-page ends here *************/
+/*************** kanbCan-page ends here *************/
+/*************** create-team-page starts here *************/
+
+
+/*************** create-team-page ends here *************/
+
+
+
+/*************** team-detail-page starts here *************/
+
+.rounded-icon{
+  background-color: #0052cc;
+  width: 40px;  
+  height: 40px;
+  border-radius: 50%;
+  padding:8px;
+  text-align: center;
+  color: white;
+}
+
+a{
+  text-decoration: none;
+}
+/*************** team-detail-page ends here *************/
