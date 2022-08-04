@@ -217,6 +217,10 @@ input:focus {
     content: none;
 }
 
+.startup-card{
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
 
 
 /*************** kanbCan-page ends here *************/
@@ -301,7 +305,7 @@ a {
 /*************** task-detail-page ends here *************/
 /*************** create-project-starts  here *************/
 
-.create-project-form label {
+.create-project-form label, .startup-config-form label {
   margin-bottom: 0px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 14px;
