@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Project Management System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+</head>
+
+<body>
+    <div class="container-fluid">
+        <header class="sticky-top py-2">
+            <section class="navbar-first">
+                <div class="row mt-2">
+                    <div class="col-2 col-md-3">
+                        <img src="../../assets/images/company.jpg" alt="">
+                    </div>
+                    <div class="col-5 col-md-4">
+                        <h2 class="company-name text-center">Machnet...</h2>
+                    </div>
+                    <div class="col-5">
+                        <ul class="nav justify-content-end">
+                            <li class="nav-item icon-links me-md-4 me-sm-1" style="background-color: #d2ddec;">
+                                <i class="bi bi-bell"></i>
+                            </li>
+                            <li class="nav-item icon-links me-md-4 me-sm-1" style="background-color: #e2e2f8;">
+                                <!-- <a class="nav-link" href="#">Link</a> -->
+                                <i class="bi bi-question-diamond"></i>
+                            </li>
+                            <li class="nav-item icon-links me-sm-3" style="background-color: #f9b479;">
+                                <span class="text-success">AM</span>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+
+            </section>
+            <!------------ navbar-first ends here ------------------->
+            <section class="navbar-second pb-2">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">
+                            <i class="bi bi-x-diamond-fill"></i> Software
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbar-collapsed" aria-controls="navbar-collapsed" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbar-collapsed">
+                            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Projects
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="#">Create New Project</a></li>
+                                        <li><a class="dropdown-item" href="#">View Existing Projects</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        People
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="#">+Invite New Member</a></li>
+                                        <li><a class="dropdown-item" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal">Create a team</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="#">Confluence</a>
+                                </li>
+                                <a class="btn btn-outline-primary" href="#" role="button">Create</a>
+                            </ul>
+                            <form class="d-flex" role="search">
+                                <div class="input-group">
+                                    <span class="input-group-text">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                            <path
+                                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                    <input type="text" class="form-control search-input" placeholder="Search Here..">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+            </section>
+            <!------------ navbar-second ends here ------------------->
+        </header>
+        <!------------ header ends here ------------------->
+        <div class="container section-task-detail mt-3">
+            <div class="row">
+                <div class="col-md-8 col-12 task">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Projects</a></li>
+                            <li class="breadcrumb-item"><a href="#">Attendance System</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">CI-2202</li>
+                        </ol>
+                    </nav>
+                    <!-- bredcrumb ends here -->
+                    <h4 class="task-name">CLONE - Only "e" is allowed in Beneficiary's bank account number</h4>
+                    <div class="task-button-group">
+                        <button type="button" class="btn btn-secondary btn-sm"> <i class="bi bi-paperclip"></i>
+                            Attach</button>
+                        <button type="button" class="btn btn-secondary btn-sm"> <i class="bi bi-check2-square"></i>
+                            Create Subtask</button>
+                    </div>
+                    <div class="task-description  mt-3">
+                        <h6 class="px-2">Description</h6>
+                        <div class="description px-2 py-1">
+                            <p>Expected Result:</p>
+                            <p>
+                                Actual Result: Only the E alphabet can be entered into the beneficiary's bank account
+                            </p>
+                            <p> Steps to replicate:</p>
+                            <ol>
+                                <li>Login to AideMoney</li>
+                                <li>go to the beneficiary page and add a new beneficiary bank account</li>
+                                <li>Try to enter “e” in the bank account number</li>
+                                <li>Observe that it is entered</li>
+                                <li>Again try to enter other alphabet</li>
+                                <li>Observe that it cannot be entered</li>
+                            </ol>
+
+
+
+                        </div>
+                    </div>
+                    <!-- task-description ends here -->
+                    <div class="task-environment mt-3">
+                        <h6 class="px-2">Environment</h6>
+                        <div class="description px-2 py-1">
+                            <span>UAT</span>
+                        </div>
+                    </div>
+                    <!-- task-environment ends here -->
+                    <div class="task-acceptance mt-3">
+                        <h6 class="px-2">Acceptance Criteria</h6>
+                        <div class="description px-2 py-1">
+                            <p>E should not be available or all the alphabet should be available</p>
+                        </div>
+                    </div>
+                    <!-- task-acceptance ends here -->
+                    <div class="task-activity my-3">
+                        <h6>Activity</h6>
+                        <div class="activity-btn-group mb-3">
+                            Show:
+                            <button type="button" class="btn btn-secondary btn-sm"> All </button>
+                            <button type="button" class="btn btn-secondary btn-sm"> Comments </button>
+                            <button type="button" class="btn btn-secondary btn-sm"> History </button>
+                        </div>
+                        <!-- activity-btn-group ends here -->
+                        <div class="row">
+                            <div class="col-1 pt-2  d-none d-sm-block">
+                                <span class="rounded-icon">AM</span>
+                            </div>
+                            <div class="col-11">
+                                <input type="text" class="form-control p-2" placeholder="Add your comment...">
+                                <div class="comment-btn-group mt-2">
+                                    <button type="button" class="btn btn-primary btn-sm me-3"> Save </button>
+                                    <button type="button" class="btn btn-outline-secondary btn-sm"> Cancel </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mt-3">
+                            <div class="col-1 pt-2  d-none d-sm-block">
+                                <span class="rounded-icon">BG</span>
+                            </div>
+                            <div class="col-11">
+                                <div class="comment-detail">
+                                    <span class="commenter me-3"><b>Bikash Grurung</b></span>
+                                    <span class="timestamp d-block d-sm-block d-md-inline mb-md-0 mb-1"> July 18, 2022
+                                        at 2: 30 PM </span>
+                                </div>
+                                <div class="comment-body mb-2">
+                                    <p>Cause: sometimes we get webhook transaction_initiated before creating the
+                                        transaction in the affiliate database. This
+                                        causes transaction not found exception.<br>
+                                        Fix: This issue will be fixed once we implement the webhook module improvement
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mt-3">
+                            <div class="col-1 pt-2 d-none d-sm-block">
+                                <span class="rounded-icon">AS</span>
+                            </div>
+                            <div class="col-11">
+                                <div class="comment-detail">
+                                    <span class="commenter me-3"><b>Anushka Shrestha</b></span>
+                                    <span class="timestamp d-block d-sm-block d-md-inline mb-md-0 mb-1"> July 20, 2022
+                                        at 8: 00 PM </span>
+                                </div>
+                                <div class="comment-body mb-2">
+                                    <p>Problem to the solution</p>
+                                    <ul>
+                                        <li>Send transaction_initiated email as soon as the transaction is created (do
+                                            not wait for webhook)
+                                        </li>
+                                        <li>Remove TRANSACTION_INITIATED event from transactionEvent list in
+                                            WebhookService.java</li>
+                                    </ul>
+                                    <p>Now you can assign this to new joinees.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="task-actions text-end">
+                        <span class="me-3" data-bs-toggle="collapse" href="#watchers" data-bs-toggle="dropdown"
+                            aria-expanded="false" data-bs-reference="parent"><i class="bi bi-eye"></i> 2</span>
+                        <span class="me-3"><i class="bi bi-share"></i></span>
+                        <span class="me-3" data-bs-toggle="collapse" href="#settings" data-bs-toggle="dropdown"
+                            aria-expanded="false"><i class="bi bi-three-dots"></i></span>
+                    </div>
+                    <!-- task-action ends here -->
+
+                    <div class="collapse" id="watchers">
+                        <ul class="list-group text-start ms-5" style="width: 60%;">
+                            <button type="button" class="list-group-item list-group-item-action"><i
+                                    class="bi bi-eye ne-3"></i> Start Watching</button>
+
+                            <b>
+                                <hr class="dropdown-divider px-2">
+                            </b>
+
+                            <li class="list-group-item p-3">
+                                <h6>Watching this issue</h6>
+                                <div class="row mt-3">
+                                    <div class="col-2">
+                                        <span class="rounded-icon-sm">AS</span>
+                                    </div>
+                                    <div class="col-9">Anushka Shrestha</div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-2">
+                                        <span class="rounded-icon-sm">BG</span>
+                                    </div>
+                                    <div class="col-9">Bikash Gurung</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- watchers ends here -->
+
+                    <div class="collapse" id="settings">
+                        <ul class="list-group">
+                            <li class="list-group-item">Clone</li>
+                            <li class="list-group-item">Delete</li>
+                            <li class="list-group-item">Archive</li>
+                        </ul>
+                    </div>
+                    <div class="clear"></div>
+                    <!-- settings ends here -->
+
+                    <div class="dropdown task-status">
+                        <button class="btn btn-outline-dark dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            To Do
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Todo</a></li>
+                            <li><a class="dropdown-item" href="#">Backlog</a></li>
+                            <li><a class="dropdown-item" href="#">In Progress</a></li>
+                            <li><a class="dropdown-item" href="#">In Dev QA</a></li>
+                            <li><a class="dropdown-item" href="#">Ready For Testing</a></li>
+                            <li><a class="dropdown-item" href="#">Done</a></li>
+                        </ul>
+                    </div>
+                    <!-- task-status ends here -->
+
+
+                    <div class="card task-detail my-3">
+                        <div class="card-header">
+                            Details
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-4">
+                                    <h6>Assignee</h6>
+                                </div>
+                                <div class="col-8">
+                                    <span class="rounded-icon-sm me-1">AM</span>
+                                    <span class="assignee">Alisha Manandhar</span>
+                                </div>
+                            </div>
+
+                            <div class="row mt-3">
+                                <div class="col-4">
+                                    <h6>Reporter</h6>
+                                </div>
+                                <div class="col-8">
+                                    <span class="rounded-icon-sm me-1">AM</span>
+                                    <span class="reporter">Anushka Shrestha</span>
+                                </div>
+                            </div>
+
+                            <div class="row mt-3">
+                                <div class="col-4">
+                                    <h6>Project</h6>
+                                </div>
+                                <div class="col-8">
+                                    <span class="badge text-bg-light">Transfapay</span>
+                                </div>
+                            </div>
+
+                            <div class="row mt-3">
+                                <div class="col-4">
+                                    <h6>Priority</h6>
+                                </div>
+                                <div class="col-8">
+                                    <span class="priority"> <i class="bi bi-collection text-info pe-2"></i>
+                                        Medium</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card task-timestamp">
+                        <div class="card-body">
+                            <p>Created January 28, 2021 at 11:38 AM <br>
+
+                                Updated July 20, 2022 at 10:34 AM
+                            </p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+        <!------------ section-team-detail ends here ------------>
+
+    </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
