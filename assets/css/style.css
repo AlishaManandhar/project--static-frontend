@@ -378,3 +378,24 @@ a {
   object-fit: cover;
 }
 
+
+
+.notification-dropdown .dropdown-toggle::after{
+  display: none;
+}
+
+
+.list-group-numbered li{
+  
+    border-left: none;
+    border-right: none;
+    border-top: none;
+
+}
+
+
+
+.assignee-list{
+  background-color: white !important;
+  color: black;
+}

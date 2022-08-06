@@ -22,7 +22,7 @@
           <div class="col-5 col-md-4">
             <h2 class="company-name text-center">Machnet...</h2>
           </div>
-          <div class="col-5"> 
+          <div class="col-5">
             <ul class="nav justify-content-end">
               <li class="nav-item icon-links me-md-4 me-sm-1" style="background-color: #d2ddec;">
                 <i class="bi bi-bell"></i>
@@ -158,6 +158,10 @@
                 <li><a class="dropdown-item" href="#">Prajita Balami</a></li>
               </ul>
             </div>
+
+            <button class="btn btn-outline-primary mb-2 mb-md-0" data-bs-toggle="modal"
+              data-bs-target="#create-task">Create</button>
+
           </div>
 
         </div>
@@ -760,8 +764,8 @@
                         </div>
                       </li>
 
-                      
-                      
+
+
                     </ul>
                   </div>
                 </div>
@@ -816,7 +820,105 @@
       </div>
       <!-- --------------add-file modal ends here -------------------->
 
-      
+      <div class="modal" id="create-task" aria-expanded="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Create Task</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+              <div class="mb-3">
+                <input type="text" class="form-control form-control-sm" id="name" placeholder="Write a task name">
+              </div>
+
+              <div class="row mb-2">
+                <div class="col-2">
+                  <small>Assignee</small>
+                </div>
+
+                <div class="col-8">
+                  <!-- <span> <i class="bi bi-person-circle pe-2"></i>No Assignee</span> -->
+                  <div class="input-group">
+                    <span class="input-group-text" id="basic-addon1"><i class="bi bi-person-circle pe-2"></i>No
+                      Assignee</span>
+                    <input class="form-control" list="datalistOptions" id="exampleDataList"
+                      placeholder="Type to search...">
+                  </div>
+                  <datalist id="datalistOptions assignee-list">
+                    <option value="San Francisco">
+                    <option value="New York">
+                    <option value="Seattle">
+                    <option value="Los Angeles">
+                    <option value="Chicago">
+                  </datalist>
+                </div>
+              </div>
+
+              <div class="row mb-2">
+                <div class="col-2">
+                  <small>Due date</small>
+                </div>
+
+                <div class="col-8">
+                  <!-- <span> <i class="bi bi-calender-check pe-2"></i>No due daye</span> -->
+                  <div class="input-group">
+                    <span class="input-group-text" id="basic-addon1"><i class="bi bi-calendar-check"></i></span>
+                    <input class="form-control" type="date">
+                  </div>
+                  <!-- <datalist id="datalistOptions assignee-list">
+                      <option value="San Francisco">
+                      <option value="New York">
+                      <option value="Seattle">
+                      <option value="Los Angeles">
+                      <option value="Chicago">
+                    </datalist> -->
+                </div>
+              </div>
+
+              <div class="row mb-2">
+                <div class="col-2">
+                  <small>Projects</small>
+                </div>
+
+                <div class="col-8">
+                  <!-- <span> <i class="bi bi-calender-check pe-2"></i>No due daye</span> -->
+                  <small>Attendance Management System</small>
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-6">
+                  <select class="form-select">
+                    <option selected>-- Select Priority --</option>
+                  </select>
+                </div>
+
+                <div class="col-6">
+                  <select class="form-select">
+                    <option selected>-- Select Severity --</option>
+                  </select>
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-12">
+                  <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                    <label for="floatingTextarea">Description</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-sm btn-secondary" data-bs-dismiss="modal">Cancel</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- --------------create-task modal ends here -------------------->
+
     </section>
     <!------------ section-kanban ends here ------------------->
 
