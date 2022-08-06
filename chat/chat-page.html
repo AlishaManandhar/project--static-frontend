@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Project Management System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+
+<body>
+    <div class="container-fluid">
+        <header class="sticky-top py-2">
+            <section class="navbar-first">
+                <div class="row mt-2">
+                    <div class="col-2 col-md-3">
+                        <img src="../assets/images/company.jpg" alt="">
+                    </div>
+                    <div class="col-5 col-md-4">
+                        <h2 class="company-name text-center">Machnet...</h2>
+                    </div>
+                    <div class="col-5">
+                        <ul class="nav justify-content-end">
+                            <li class="nav-item icon-links me-md-4 me-sm-1" style="background-color: #d2ddec;">
+                                <i class="bi bi-bell"></i>
+                            </li>
+                            <li class="nav-item icon-links me-md-4 me-sm-1" style="background-color: #e2e2f8;">
+                                <!-- <a class="nav-link" href="#">Link</a> -->
+                                <i class="bi bi-question-diamond"></i>
+                            </li>
+                            <li class="nav-item icon-links me-sm-3" style="background-color: #f9b479;">
+                                <span class="text-success">AM</span>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+
+            </section>
+            <!------------ navbar-first ends here ------------------->
+            <section class="navbar-second pb-2">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">
+                            <i class="bi bi-x-diamond-fill"></i> Software
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbar-collapsed" aria-controls="navbar-collapsed" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbar-collapsed">
+                            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Projects
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="#">Create New Project</a></li>
+                                        <li><a class="dropdown-item" href="#">View Existing Projects</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        People
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="#">+Invite New Member</a></li>
+                                        <li><a class="dropdown-item" href="#">Create a team</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="#">Confluence</a>
+                                </li>
+                                <a class="btn btn-outline-primary" href="#" role="button">Create</a>
+                            </ul>
+                            <form class="d-flex" role="search">
+                                <div class="input-group">
+                                    <span class="input-group-text">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                            <path
+                                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                    <input type="text" class="form-control search-input" placeholder="Search Here..">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+            </section>
+            <!------------ navbar-second ends here ------------------->
+        </header>
+        <!------------ header ends here ------------------->
+        <section class="section-chat container mt-3">
+            <div class="recipient-info">
+                <div class="dropdown">
+                    <button class="btn btn-outline-dark dropdown-toggle p-3" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Urushi Maharjan
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#view-members">VIew
+                                Members</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Delete Conversation</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!---------- recipient-info ends here ---------->
+
+            <div class="recipient-description p-3">
+                <div class="rounded-icon-lg mx-auto">AB</div>
+                <!-- <img src="../assets/images/company.jpg" class="rounded-img-lg" alt="" srcset=""> -->
+
+                <h4 class="mt-3">Urushi Maharjan</h4>
+
+                <small class="recipient-email">sriya.mainali@deerwalk.edu.np</small>
+
+            </div>
+            <!---------- recipient-description ends here ---------->
+
+            <div class="chat-history">
+                <div class="row mt-3">
+                    <div class="col-1 pt-2  d-none d-sm-block text-end">
+                        <span class="rounded-icon-sm">BG</span>
+                    </div>
+                    <div class="col-8">
+                        <div class="comment-detail">
+                            <span class="commenter me-3"><b>Bikash Grurung</b></span>
+                            <span class="timestamp d-block d-sm-block d-md-inline mb-md-0 mb-1"> July 18, 2022
+                                at 2: 30 PM </span>
+                        </div>
+                        <div class="comment-body mb-2">
+                            <p>Cause: sometimes we get webhook transaction_initiated before creating the
+                                transaction in the affiliate database. This
+                                causes transaction not found exception.<br>
+                                Fix: This issue will be fixed once we implement the webhook module improvement
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col-1 pt-2  d-none d-sm-block text-end">
+                        <span class="rounded-icon-sm">SN</span>
+                    </div>
+                    <div class="col-8">
+                        <div class="comment-detail">
+                            <span class="commenter me-3"><b>Satyadeep Neupane</b></span>
+                            <span class="timestamp d-block d-sm-block d-md-inline mb-md-0 mb-1"> July 18, 2022
+                                at 2: 35 PM </span>
+                        </div>
+                        <div class="comment-body mb-2">
+                            <p>Ok di, will be font by eod
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col-1 pt-2  d-none d-sm-block text-end">
+                        <!-- //content to be filled later -->
+                    </div>
+                    <div class="col-8">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Recipient's username"
+                                aria-label="Recipient's username" aria-describedby="button-addon2">
+                            <button class="btn ms-2" type="button" id="button-addon2"><i
+                                    class="bi bi-send-fill text-primary"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!---------- chat-history ends here ---------->
+
+            <div class="modal" id="view-members">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Group Members <p class="lead">5 members</p>
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>List of all the group members</p>
+                            <div class="row mb-2">
+                                <div class="col-2">
+                                    <img src="../assets/images/company.jpg" class="rounded-img-sm" alt="">
+                                </div>
+                                <div class="col-8">
+                                    <h6 class="mb-0">Satyadeep Neupane</h6>
+                                    <small class="my-0">satyadeep.neupane@deeerwalk.edu.mp</small>
+                                </div>
+                            </div>
+
+                            <div class="row mb-2">
+                                <div class="col-2">
+                                    <img src="../assets/images/company.jpg" class="rounded-img-sm" alt="">
+                                </div>
+                                <div class="col-8">
+                                    <h6 class="mb-0">Satyadeep Neupane</h6>
+                                    <small class="my-0">satyadeep.neupane@deeerwalk.edu.mp</small>
+                                </div>
+                            </div>
+
+                            <div class="row mb-2">
+                                <div class="col-2">
+                                    <img src="../assets/images/company.jpg" class="rounded-img-sm" alt="">
+                                </div>
+                                <div class="col-8">
+                                    <h6 class="mb-0">Satyadeep Neupane</h6>
+                                    <small class="my-0">satyadeep.neupane@deeerwalk.edu.mp</small>
+                                </div>
+                            </div>
+
+                            <div class="row mb-2">
+                                <div class="col-2">
+                                    <img src="../assets/images/company.jpg" class="rounded-img-sm" alt="">
+                                </div>
+                                <div class="col-8">
+                                    <h6 class="mb-0">Satyadeep Neupane</h6>
+                                    <small class="my-0">satyadeep.neupane@deeerwalk.edu.mp</small>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-sm btn-secondary"
+                                data-bs-dismiss="modal">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- --------------view-members modal ends here -------------------->
+
+
+        </section>
+        <!------------ section-chat ends here ------------------->
+
+    </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
